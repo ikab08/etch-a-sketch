@@ -2,23 +2,38 @@
     box-sizing: border-box;
 }
 
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 100vh;
+    align-items: center;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
 .container {
-    width: 480px; 
-    height: 480px; 
+    width: 720px; 
+    height: 720px; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-section {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-}
-.grid-div {
-    /* Calcule la taille exacte d'une case (1/16ème de la largeur) */
+/* .grid-div {
+    //* Calcule la taille exacte d'une case (1/16ème de la largeur) *
     flex: 0 0 calc(100% / 16); 
     height: calc(100% / 16);
     border: 1px solid burlywood;
+} */
+
+.grid-div:hover {
+    background-color: black;
 }
