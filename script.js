@@ -7,6 +7,7 @@ const btnDark = document.querySelector("#btnDark");
 let squareColor = "dark";
 
 function createGrid(numberOfSquare) {
+    container.style.setProperty("--size", numberOfSquare);
     const totalSquares = numberOfSquare*numberOfSquare;
     const fragment = document.createDocumentFragment();
 
@@ -14,7 +15,6 @@ function createGrid(numberOfSquare) {
         const square = document.createElement("div");
         square.classList.add("grid-div");
         fragment.appendChild(square);
-        square.setAttribute("style",`flex: 0 0 calc(100%/${numberOfSquare}); height: calc(100%/${numberOfSquare}); border:1px solid burlywood;`);  
     }
     container.replaceChildren(fragment);
 }

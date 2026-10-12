@@ -30,13 +30,16 @@ button:hover {
 }
 
 .container {
-    width: 720px; 
-    height: 720px; 
+    --size: 16; /* default value*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: min(90vw, 480px); 
+    border: 1px solid burlywood;
 }
 
 .grid-div {
+    flex: 0 0 calc(100% / var(--size));
+    aspect-ratio: 1;
     border: 1px solid burlywood;
 }
