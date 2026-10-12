@@ -43,12 +43,13 @@ function createGrid(numberOfSquare) {
 createGrid(16);
 
 btnNew.addEventListener("click", ()=>{
-    number = prompt("Squares per side for the grid up to 100?");
-    if(number && number < 100){
-        container.innerHTML = "";
-        console.log(number);
-        createGrid(number);
+    const input = prompt("Squares per side for the grid up to 100?");
+    if (input === null) return;
+
+    const numOfSize = Number.parseInt(input, 10);
+    if(Number.isInteger(numOfSize) && numOfSize >= 1 && numOfSize <= 100){
+        createGrid(numOfSize);
     } else {
-        alert("Choose a correct number and less than 100");
+        alert("Please enter a whole number between 1 and 100");
     }
 });
