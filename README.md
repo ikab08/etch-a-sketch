@@ -2,7 +2,7 @@
 
 A version of something between a sketchpad and an Etch-A-Sketch, written in JavaScript.
 
-🔗 **[Online demo](https://ikab08.github.io/rock-paper-scissor/)**
+🔗 **[Online demo](https://ikab08.github.io/etch-a-sketch/)**
 
 ![Screenshot](assets/screenshot.png)
 
